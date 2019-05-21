@@ -1,8 +1,6 @@
 package com.practice.dp;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 
 
@@ -11,7 +9,7 @@ public class CoinChangingMinimumCoin {
 	        int total = 11;
 	        int coins[] = {1, 5, 6, 8};
 	        CoinChangingMinimumCoin cc = new CoinChangingMinimumCoin();
-	        Map<Integer, Integer> map = new HashMap<>();
+//	        Map<Integer, Integer> map = new HashMap<>();
 //	        int topDownValue = cc.minimumCoinTopDown(total, coins, map);
 	        int bottomUpValue = cc.minimumCoinBottomUp(total, coins);
 
