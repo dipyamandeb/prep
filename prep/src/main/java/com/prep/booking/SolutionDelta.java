@@ -1,16 +1,16 @@
 package com.prep.booking;
 
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.IntStream;
 
 class Result {
 
@@ -47,6 +47,7 @@ public class SolutionDelta {
 
 		int numbersCount = Integer.parseInt(bufferedReader.readLine().trim());
 
+		@SuppressWarnings("resource")
 		List<Integer> numbers = IntStream.range(0, numbersCount).mapToObj(i -> {
 			try {
 				return bufferedReader.readLine().replaceAll("\\s+$", "");

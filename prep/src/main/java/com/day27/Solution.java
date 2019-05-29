@@ -53,7 +53,8 @@ public class Solution {
 	public static void TestWithEmptyArray() {
         try {
             int[] seq = TestDataEmptyArray.get_array();
-            int result = minimum_index(seq);
+            @SuppressWarnings("unused")
+			int result = minimum_index(seq);
         } catch (IllegalArgumentException e) {
             return;
         }
