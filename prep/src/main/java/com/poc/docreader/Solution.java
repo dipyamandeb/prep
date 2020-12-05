@@ -11,9 +11,12 @@ import org.apache.poi.hwpf.extractor.WordExtractor;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.hwpf.usermodel.Picture;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.xssf.usermodel.XSSFPictureData;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class Solution {
-	public static String inputFilename = "/home/dipyaman/Documents/ResumeLinkedIn.doc";
+	public static String inputFilename = "/home/dipyaman/Documents/testText.doc";
 	public static String outputFilename = "";
 	public static String inputImageName = "/home/dipyaman/Documents/testImage.doc";
 
@@ -60,24 +63,24 @@ public class Solution {
 		}
 	}
 	
-	private  void extractImage(String inputImageName) throws FileNotFoundException, IOException {
+	private void extractImage(String inputImageName) throws FileNotFoundException, IOException, InvalidFormatException {
 		// TODO Auto-generated method stub
 		@SuppressWarnings("resource")
-		HWPFDocument doc = new HWPFDocument(new FileInputStream(inputImageName));  
+		HWPFDocument doc = new HWPFDocument(new FileInputStream(inputImageName));
+//		XSSFWorkbook doc = new XSSFWorkbook(new File(inputImageName));
 		List<Picture> pics = doc.getPicturesTable().getAllPictures();
+//		List<XSSFPictureData> pics = doc.getAllPictures();
+		for (int i = 0; i < pics.size(); i++) {
+			Picture pic = (Picture) pics.get(i);
 
-		for(int i=0; i<pics.size(); i++) {
-			Picture pic = (Picture)pics.get(i);
-
-			FileOutputStream outputStream = new FileOutputStream(inputImageName+"Apache_");
+			FileOutputStream outputStream = new FileOutputStream(inputImageName + "Apache_");
 			outputStream.write(pic.getContent());
 			outputStream.close();
-//			System.out.println("Image extracted successfully");
-		
-	}
+		}
+		System.out.println("Image extracted successfully");
 	}
 
-	public static void main(String[] args) throws FileNotFoundException, IOException {
+	public static void main(String[] args) throws FileNotFoundException, IOException, InvalidFormatException {
 
 //	readDocxFile(inputFilename);
 
@@ -85,7 +88,8 @@ public class Solution {
 //	extractImage(inputImageName);
 		
 		Solution solution = new Solution();
-		solution.extractImage(inputImageName);
+		solution.readDocFile(inputFilename);
+		solution.extractImage(inputFilename);
 	}
 
 }
