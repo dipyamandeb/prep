@@ -18,7 +18,7 @@ package com.dp.countSubsetGivenDiff;
  * arr[]:1 1 2 3
  * Diff:1
  * O/P:3
- * s1+s2 = diff-------1
+ * s1-s2 = diff-------1
  * s1+s2 = sum(arr)---2
  * 1+2
  * -----------------------------------
