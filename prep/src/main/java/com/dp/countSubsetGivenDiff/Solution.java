@@ -25,6 +25,7 @@ package com.dp.countSubsetGivenDiff;
  * 2s1 = diff+sum(arr)
  * s1 = diff+sum(arr)/2
  * 
+ * 
  */
 
 public class Solution {
