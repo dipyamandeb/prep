@@ -1,13 +1,19 @@
 package com.bs.firstLastOccurence;
 
+/*
+ * This contains 1st and last occurence and the number of occurence of an elemnet
+ */
 public class Solution {
 	public static void main(String[] args) {
 		int arr[] = new int[] { 2, 4, 10, 10, 10, 18, 20 };
 		int ele = 10;
 		int firstEle = findFirstOccurence(arr, ele);
 		int lastEle = findLastOccurence(arr, ele);
+		int numberOfOccurance = lastEle -firstEle;
+		numberOfOccurance = numberOfOccurance>0?numberOfOccurance+1:0;
 		System.out.println("First Occurence:" + firstEle);
 		System.out.println("Last Occurence:" + lastEle);
+		System.out.println("Number of Occurence:" +numberOfOccurance);
 	}
 
 	private static int findLastOccurence(int[] arr, int ele) {
