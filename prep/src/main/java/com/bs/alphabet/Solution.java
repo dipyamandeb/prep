@@ -12,7 +12,7 @@ public class Solution {
 		// Function call
 		System.out.println("Next Alphabet is:" + result);
 	}
-
+//test1
 	private static char nextGreatestAlphabet(char[] arr, char ele) {
 		if (arr.length == 0) {
 			return '#';
