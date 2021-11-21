@@ -42,7 +42,7 @@ public class Solution {
 
 	private static int findNumberOfRotOfSortedArray(int[] arr) {
 
-		if (arr.length == 0) {
+		if (arr.length < 1) {
 			return -1;
 		}
 		int length = arr.length - 1;
