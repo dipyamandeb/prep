@@ -41,4 +41,4 @@ secrets.yml
 .sts4-cache
 /target/
 /.metadata/
-/.sonarlint/
+/sonarlint-slf4j-sonar-log8803237710314631800.jar
