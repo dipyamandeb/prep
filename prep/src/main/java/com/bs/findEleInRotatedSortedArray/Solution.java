@@ -4,9 +4,9 @@ package com.bs.findEleInRotatedSortedArray;
  */
 public class Solution {
 	public static void main(String[] args) {
-		int arr[] = new int[] { 11, 12, 15, 18, 20, 22, 2, 6, 8 };
+		int arr[] = new int[] { 3, 1};
 		int numberOfRotation = findNumberOfRotOfSortedArray(arr);
-		int ele = 6;
+		int ele = 3;
 		int indexofElement = findTheIndexEle(arr, numberOfRotation, ele);
 		System.out.println("indexofElement:" + indexofElement);
 	}

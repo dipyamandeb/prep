@@ -5,6 +5,9 @@
 	<groupId>com.practice</groupId>
 	<artifactId>prep</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<junit.jupiter.version>5.4.0</junit.jupiter.version>
+	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
 		<dependency>
@@ -38,7 +41,18 @@
 			<version>3.15</version>
 		</dependency>
 
-
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>${junit.jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>${junit.jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 </project>
