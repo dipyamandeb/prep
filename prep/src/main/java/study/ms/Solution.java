@@ -8,10 +8,13 @@ public class Solution {
 
         A a =new B();
         a.xyz();
+//        A's constructor
+//        B's constructor
 //        B's xyz
 
-            B b = new B();
-            b.xyz();
+
+//            B b = new B();
+//            b.xyz();
 //        A's constructor
 //        B's constructor
 //        B's xyz
