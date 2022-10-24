@@ -2,6 +2,7 @@ package study.java8;
 
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Solution {
     public static void main(String[] args) {
@@ -15,10 +16,12 @@ public class Solution {
 //        System.out.println(myList.stream().count());
 //        System.out.println(myList.stream().max(Integer::compare));
         myList.stream().sorted(Collections.reverseOrder()).forEach(System.out::println);
+        List<Integer> collect = myList.stream().sorted((x, y) -> y.compareTo(x)).collect(Collectors.toList());
+        System.out.println(collect);
 // find the sum of numbers that are less than 100 and calculate the average
-//        List<Integer> list = Arrays.asList(150, 132, 73, 104, 84, 168, 92, 27, 77);
-//        list.stream().filter(n->n<100).map(n->n+/2);
-
+        List<Integer> list = Arrays.asList(100, 10, 40);
+        OptionalDouble average = list.stream().filter(n -> n > 9).mapToInt(n -> n).average();
+        System.out.println(average);
 
     }
 
