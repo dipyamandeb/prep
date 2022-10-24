@@ -5,7 +5,7 @@ public class B extends A {
         System.out.println("B's constructor");
     }
 
-    public void xyz(){
+    public void xyz() {
         System.out.println("B's xyz");
     }
 }

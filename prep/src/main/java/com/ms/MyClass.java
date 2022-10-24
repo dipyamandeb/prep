@@ -6,6 +6,7 @@ public class MyClass {
         xyz(1);
 //        java: method xyz(int) is already defined in class com.ms.MyClass
     }
+
     public static void xyz(int i) {
         System.out.println("1st Method");
     }
