@@ -5,6 +5,7 @@
 *.jar
 *.class
 *.sw?
+
 *.idea
 *~
 .#*

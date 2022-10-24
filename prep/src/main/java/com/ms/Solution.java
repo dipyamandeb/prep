@@ -6,8 +6,8 @@ public class Solution {
 //        b.xyz();
 //        java: incompatible types: com.ms.A cannot be converted to com.ms.B
 
-//        A a =new B();
-//        a.xyz();
+        A a =new B();
+        a.xyz();
 //        B's xyz
 
 //            B b = new B();
