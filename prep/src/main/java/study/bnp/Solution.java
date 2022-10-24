@@ -1,4 +1,4 @@
-package com.prep.bnp;
+package study.bnp;
 
 import static java.util.stream.Collectors.joining;
 

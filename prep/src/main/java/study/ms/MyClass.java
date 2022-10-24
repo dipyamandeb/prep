@@ -1,4 +1,4 @@
-package com.ms;
+package study.ms;
 
 public class MyClass {
 

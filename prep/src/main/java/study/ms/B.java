@@ -1,4 +1,4 @@
-package com.ms;
+package study.ms;
 
 public class B extends A {
     public B() {

@@ -1,4 +1,4 @@
-package com.prep.cdac;
+package study.cdac;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;

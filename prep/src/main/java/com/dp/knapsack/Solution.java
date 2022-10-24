@@ -1,6 +1,6 @@
 package com.dp.knapsack;
 
-import com.prep.util.FillArray;
+import study.util.FillArray;
 
 //Implementation of 0/1 knapsack
 

@@ -1,4 +1,4 @@
-package com.prep.tiaa;
+package study.tiaa;
 
 import java.util.ArrayList;
 import java.util.HashSet;

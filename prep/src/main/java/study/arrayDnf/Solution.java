@@ -1,4 +1,4 @@
-package com.epi.arrayDnf;
+package study.arrayDnf;
 
 import java.util.Stack;
 

@@ -1,4 +1,4 @@
-package com.java8;
+package study.java8;
 
 
 import java.util.*;

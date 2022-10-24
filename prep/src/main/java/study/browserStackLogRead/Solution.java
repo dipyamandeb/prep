@@ -1,4 +1,4 @@
-package com.intrw.browserStackLogRead;
+package study.browserStackLogRead;
 
 import java.io.BufferedWriter;
 import java.io.File;

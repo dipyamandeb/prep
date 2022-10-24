@@ -1,4 +1,4 @@
-package com.prep.booking;
+package study.booking;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

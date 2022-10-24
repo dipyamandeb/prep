@@ -1,4 +1,4 @@
-package com.prep.nse;
+package study.nse;
 
 import java.util.HashMap;
 /**

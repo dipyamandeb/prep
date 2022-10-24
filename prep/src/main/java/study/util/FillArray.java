@@ -1,4 +1,4 @@
-package com.prep.util;
+package study.util;
 
 public class FillArray {
 

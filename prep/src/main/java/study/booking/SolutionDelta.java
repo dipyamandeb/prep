@@ -1,4 +1,4 @@
-package com.prep.booking;
+package study.booking;
 
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;

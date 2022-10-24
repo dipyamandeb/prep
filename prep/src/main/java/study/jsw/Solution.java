@@ -1,4 +1,4 @@
-package com.prep.jsw;
+package study.jsw;
 
 import java.util.Stack;
 
