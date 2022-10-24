@@ -5,8 +5,7 @@
 *.jar
 *.class
 *.sw?
-
-*.idea
+/.idea/
 *~
 .#*
 .*.md.html
