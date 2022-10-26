@@ -1,5 +1,7 @@
 package study.optional;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Optional;
 
 public class Solution {
@@ -9,7 +11,8 @@ public class Solution {
 //        System.out.println(optStr.isPresent());
 //        System.out.println(optStr.get());
 //        System.out.println(optStr.orElse("Default value"));
-
+        ArrayList<Integer> integers = new ArrayList<>(Arrays.asList(1, 2, 3));
+        System.out.println(integers);
         Optional<Integer> len = getLength(str);
         System.out.println(len);
     }
