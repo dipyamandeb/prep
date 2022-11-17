@@ -17,6 +17,27 @@ Output 2:
  */
 
 //vinod.kanchi@go-mmt.com
+/*
+
+Rotating Array Search
+
+A: [10, 12, 0, 2, 4, 6, 8]
+
+Search for 4 in the array and print the index.
+
+answer: 4
+ */
+/*
+A = [1 3 -1 -3 5 3 6 7]
+
+B=1 3 -1 2 -4
+s=3
+LocalMaximu=  3
+currMaxima = Math.max(currMaxima, new Elemanet)
+
+ */
+
+
 public class SolutionMMT {
 
     public static void main(String[] args) {
