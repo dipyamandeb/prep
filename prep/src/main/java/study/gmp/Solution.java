@@ -28,6 +28,7 @@ public class Solution {
             int baseElement = stack.pop();
             sortStack(stack);
             insertElement(stack,baseElement);
+
         }
 
 
